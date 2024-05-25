@@ -12,7 +12,6 @@ import (
 )
 
 func GetLanguage() *sitter.Language {
-	// Version Pointer
 	ptr := unsafe.Pointer(C.tree_sitter_ini())
 	return sitter.NewLanguage(ptr)
 }
